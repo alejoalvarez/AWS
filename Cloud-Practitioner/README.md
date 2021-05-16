@@ -1,6 +1,6 @@
 # Cloud Practitioner
 
-## Cloud Computing models
+## Modelos de informática en la nube 
 
 <p align="center">
 <img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/image1-Cloud%20computing%20models.png">
@@ -10,62 +10,634 @@
 <img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image2-Cloud%20computing%20models.png">
 </p>
 
-## Availability zoness
-
-- AZ (Available Zone) Availability Zone (is where the data center is), I can choose the AZ but not the region
+## Zonas de disponibilidad
+	
+- AZ (Available Zone) Zona de disponibilidad (es donde esta el centro de datos), puede elegir la AZ pero no la región 
 - Región (Conjunto de AZ) (Una region tiene varias zonas de disponibilidad, en promedio son 3 AZ por region)
-- There are 22 regions (region is where data is saved)
-- There are also EDGEs that communicate with the regions to form the AWS backbone
+- Hay 22 regiones (Una región es donde se guardan los datos) 
+- También hay egges o bordes que se comunican con las regiones para formar el backbone de AWS 
 
 <p align="center">
 <img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image3-Availability%20zone.png">
 </p>
 
-4 criteria are used to choose a region:
-- By laws to know if it should be saved or not in that region, since the law of where the region is placed applies
-- Due to latency, when we delay in accessing
-- Availability of services
-- Price of services
+Para elegir región se usan 4 criterios: 
+
+- Por leyes para saber si se debe guardar o no en esa región, ya que aplica la ley de donde se ponga la región 
+- Por latencia, cuando demoramos en acceder 
+- Disponibilidad de los servicios 
+- Precio de los servicios 
 
 <p align="center">
 <img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image4-selection%20Region.png">
 </p>
 
-- + 205 Edges
-- all edges have a DNS
+- mas de 205 edge
+- Todos los edge tienen DNS 
 
 <p align="center">
 <img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image5-Edge%20Locations.png">
 </p>
 
-Ways to interact with AWS (Everything on AWS is an API)
+Formas de interactuar con AWS (Todo en AWS es una API)
 
 <p align="center">
 <img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image6-Interact%20with%20AWS.png">
 </p>
 
-
 ## EC2  - Elastic Compute Cloud
 
-- EC2 are virtual machines online, better called instances
-- Processing is charged by the hour
-- I can select the operating system I need
-- They have CPU, RAM, one or more hard drives
-- They generate unique keys to be able to connect to your Linux or Windows machine safely
-- Various hard disk space options, virtually infinite
-- It is protected by the Firewall (security group) then by the subnets, then by the VPC (and additionally you can put WAF)
-- You can have different copies of the same machine in different geographic regions
-- You can control in a very fine way from where you can connect one to the machine and by what ports
-- You can choose to buy a static public IP so that you can always put the latest version or the latest machine on that IP
-- You can back up the entire machine (Operating environments, everything) whenever you want
-- At any time it can be scaled in terms of resources (CPU, RAM, etc.)
-- You can copy a snapshot to other regions, in case anything happens in which you are
-- For the instances we are responsible for updating the OS
-- Our instances will not support themselves, we must
-- We can make backups before making big changes, to be able to rollback if necessary
-- If the server shuts down, goodbye data
+- Son maquinas virtuales en línea, mejor llamadas instancias
+- El procesamiento se cobra por hora
+- Puedo seleccionar el sistema operativo que necesite
+- Tienen CPU, RAM, uno o mas discos duros
+- Generan llaves únicas para poder conectarte a tu maquina Linux o Windows de forma segura 
+- Diversas opciones de espacio en disco duro, virtualmente infinito 
+- Esta protegida por el Firewall (security group) luego por la subredes, luego por la VPC (y adicional se pueden poner WAF)
+- Puedes tener diversas copias de la misma maquina en diversas regiones geográficas 
+- Puedes controlar de manera muy fina desde donde se puede conectar uno a la maquina y por que puertos 
+- Puedes optar por comprar una IP publica estática para que siempre puedas poner la ultima versión o la ultima maquina en esa IP 
+- Puedes respaldar toda la maquina (Ambientes operativo, todo) cada que quieras 
+- En cualquier momento se puede escalar a nivel de recursos (CPU, RAM, etc.) 
+- Puedes copiar un snapshot a otras regiones, en caso de que cualquier cosa suceda en la que estas 
+- Para las instancias nosotros somos los responsables de actualizar el OS 
+- Nuestras instancias no se respaldaran sola, nosotros debemos hacerlo 
+- Podemos hacer respaldos antes de hacer grandes cambios, para poder hacer rollback en caso de ser necesario
+- Si se apaga el servidor adiós datos
+- Cuando se crea una instancia de EC2 se debe seleccionar un SO el cual se encuentra en una AMI
 
-When creating an EC2 instance you must select an OS which is in an AMI
+**Ventajas**
+- Elasticidad (crecer o decrecer según se requiera)
+- Se tiene completo control puedo elegir el sistema operativo, hardware sobre el cual corre (cuando prender y apagar las instancias)
+- Flexibilidad (Hay 5 tipos de instancias)
+    - Nano
+    - Micro
+    - Small
+    - Large
+    - Extra large
+- Se integra fácilmente con otros servicios AWS
+- Disponibilidad (Ofrecen el 99.99% de disponibilidad)
+- Seguridad
+- Sencillo (se crean facilmente )
+
+### Clasificación de instancias
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image7-usecase.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image8-usecase.png">
+</p>
+
+## Almacenamiento de datos
+
+## EBS (Elatic Block Store)
+
+- Almacenan información en su propio disco (disco es llamado EBS, se le llama así por que AWS replica la información dentro de la misma AZ)
+- Almacenamiento en bloque persistente para instancias
+- Protegida a través de la replicación 
+- Diferente tipos de unidades:
+    - SSD (Unidades de estado solido)
+	    - Volúmenes SSD de IOPS provisionadas (io1) (i01 es el mas rapido, por ende es el mas caro, tiene menor latencia)
+		- Volúmenes SSD de uso general (gp2)
+    - HDD (Unidades de disco duro)
+	    - Volúmenes HDD optimizados para el rendimiento (st1) (st1 es lo mas barato por el ancho de banda)
+		- Volúmenes HDD fríos (sc1)
+- Aumento o reduzca la escala en minutos (Se pueden agregar 1 o n dispositivos de arranque)
+- Pague solo por lo que se aprovisione
+- Funcionalidades instantáneas
+- Los datos no se pueden compartir dado que están en la misma instancia, si necesitamos compartir datos EBS no sirve
+- Es como un disco USB, es decir un almacenamiento remoto de bloques que es persistente, se puede cambiar de maquina 
+- Cuando la maquina se apaga no se borra el contenido
+
+Pueden ser: 
+- Locales - Almacenamiento de instancias, problema cuando la maquina se apaga y se pierden los datos, la idea es usarlo para datos temporales 
+- Remotos 
+
+Condiciones para usar EBS:
+- Estar en la misma AZ  
+- Solo puede estar en un solo servidor a la vez 
+
+## S3 - Simple Storage Service
+
+- Permite guardar archivos en su plataforma de tal forma tus instancias EC2, Lambda y otras son efímeras y puedes borrarlas sin preocupación alguna 
+- S3 es un repositorio de archivos rápidos, perfecto para uso de una aplicación a la hora de crear, manipular y almacenar datos 
+- S3 permite hacer respaldos en tiempo prácticamente real en otras regiones de AWS 
+- S3 es elastic, se puede tener menos o mas recursos
+- El almacenamiento de S3 es infinito
+- Para comunicar los S3 desde el front a back debe tener CORS (Autorización de origen cruzado)
+- No bloquea, es decir que el ultimo que grabe gana
+- Los datos se almacen como objetos dentro de buckets
+- 99,999999999 % perdurable (99 11)
+- Puedo decidir en que region tenerlo
+- Puedo dar acceso al bucket completo o atomicamente a los objetos que este tengo guardados
+- S3 proporciona una interfaz de servicios web sencilla que se puede utilizar para almacenar y recuperar cualquier cantidad de datos, en cualquier momento, desde cualquier lugar en la web
+- Escriba, lea y elimine objetos que contengan desde 1 byte hasta 5 terabytes de datos cada uno. El número de objetos que puede almacenar es ilimitado.
+- Cada objeto se almacena en un bucket (balde) y se recupera mediante una clave única asignada por el desarrollador
+- Puede elegir una región para optimizar la latencia, minimizar los costos o abordar los requisitos reglamentarios.
+- Los objetos almacenados en una región nunca abandonan la región a menos que los transfieras
+- Mecanismos de autenticación: se proporcionan para garantizar que los datos se mantengan seguros frente al acceso no autorizado.
+- Los objetos se pueden convertir en privados o públicos, y los derechos de cabina se pueden otorgar a usuarios específicos.
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image9-S3.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image10-S3.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image11-S3.png">
+</p>
+
+
+## S3 Glacier
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image12-S3%20Glacier.png">
+</p>
+
+- AWS tiene un tipo de almacenamiento mas económico, pero mas lento llamado Glacier 
+- Es una muy buena opción si tu tienes que ir guardando algún tipo de archivo histórico, por ejemplo documento de años pasados de transacciones 
+- Glacier podrá entregar tus datos/archivos con tiempos de entre 2-15 minutos por archivo  
+- Cuando se restaura se pone en S3, ya sea uno nuevo o una que ya este creado
+- En S3 se habla de objetos, en glacier se habla de archivos
+- Su tamaño es de 40 Teras
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image13-S3%20Glacier.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image14-S3%20Storage%20Classes.png">
+</p>
+
+## Proteccón de datos
+
+## VPC
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image15-VPC.png">
+</p>
+
+- El firewall que protege la instancia EC2 es comúnmente llamada Security Group
+- Cuando creo la VPC defino la cantidad de direcciones IPC que va a tener, se debe tener mucho cuidado al momento de definir dicho rango 
+- Red aislada personal a la cual nadie tiene acceso a no ser de que yo autorice 
+- Esta definido sobre una región y sus correspondientes AZ
+- Es como si fuera un muro para proteger ,is recursos del mundo exterior 
+- Agrupar recursos (back, front, base de datos etc.) 
+- Puede usar IPV4 o IPV6, para el curso se usa IPV4 
+- Una VPC vive sobre una región 
+- Una VPC es igual a una región que incluye varias AZ 
+- AWS, se reserva los 4 mas bajos y el ultimo mas alto 
+- Importante dividir mi red en subredes para tolerar fallas, es decir tenerlas sobre distintas AZ 
+- Una subnet vive sobre una única AZ 
+- VPC es región y subnet es igual AZ 
+- Subnet - Aislar para tener seguridad, y para decir como alguna maquina puede acceder al mundo de internet 
+- Subnet public - para que pueda hablar con el mundo exterior 
+- Subent private - solo puede hablar localmente 
+- La puerta hacia internet se llama internet gateway, y es la única forma de poder salir al mundo exterior 
+- Internte gateway - es una especie de router, es gratis en todas las VPC, altamente portable, permite salir al mundo exterior 
+- Elastic IP Adresses - son IP fijas, solo dan 5 por región, se debe usar en los siguientes 60 segundo para poder que no me la cobren 
+- NAT gateway - Salida que no tiene entrada, la instancias se comunica con el Gateway para poder salir, que salga una IP privada para poder actualizar parches o algo por el estilo 
+- Siempre mínimo 2 AZ 
+- IP publica estática para que internet vea la subnet publica
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image16-Security%20Group.png">
+</p>
+
+- El security group puede ser asociada a una o a muchas instancias
+- Solo reglas "permitir", sin reglas de "denegar" (por ejemplo desde que ip, desde que rango de ips)
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image17-Security%20Group.png">
+</p>
+
+## Monitoreo
+
+## CloudWatch
+
+- Que esta sucediendo en la infraestructura o en los servidores  
+- Las instancias tienen cloud watch 
+- El Elastic Load Balancer (ELB) tiene cloud watch 
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image18-Cloud%20Watch.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image19-Cloud%20Watch.png">
+</p>
+
+Beneficios de cloud watch:
+- Acceder a todas las metricas desde una unica plataforma
+- Mantener la visibilidad de sus aplicaciones, infraestructura y servicios
+- Reducir el mean time to resolution (MTTR, tiempo promedio de resolución) y mejorar el costo of ownership (TCP, costo total de propiedad)
+- Impulsar la información para optimizar las aplicaciones y los recursos operativos
+- Pagar por uso
+
+## Autoscaling
+
+- Cloudwatch, EC2 autoscaling and ELB son los encargados de proporcionar el autoscaling
+- EC2 auto scaling ajusta la capacidad según sea necesario
+- Subir instancias cuando haya mayor demanda
+- Bajar instancias cuando haya menor demanda
+- Reemplazar instancias en mal estado
+- Pago solo por lo que se utilice
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image20-EC2.png">
+</p>
+
+## ELB (elastic Load Balancing)
+- Distribuye el tráfico de aplicaciones.
+- Recibe en HTTP o HTTPS.
+- El cliente se conecta a un endpoint o una ip pública que le pega directamente al Elastic load Balancer.
+- Luego este componente enruta a instancias (las instancias pueden ser servidores por ejemplo NodeJS).
+- El cloud Watch se pega al Elastic Load Balancer para poder monitorear el tráfico.
+- Cuando se crea una nueva instancia se le avisa al balanceador para que este lo incorpore y pueda enrutar peticiones.
+- El balanceador constantemente pregunta por el estado de salud de las N instancias que se tengan desplegadas.
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image21-ELB.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image22-ELB.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image23-ELB.png">
+</p>
+
+## Servicio de base de datos
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image24-Database.png">
+</p>
+
+## RDS - Amazon Relational Database Service
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image25-Aurora.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image25-RDS.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image26-RDS.png">
+</p>
+
+## DynamoDB
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image27-DynamoDB.png">
+</p>
+
+
+Las tablas pueden ser a nivel regional o a nivel global
+
+Cuando usar DynamoDB:
+- Aplicaciones web sin servidor
+- Almacén de datos para microservicios
+- Backends para aplicaciones moviles
+- Tecnología de anuncios
+- Videojuegos
+- IoT
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image28-DataBase.png">
+</p>
+
+Redshift permite almacenar millones de gigas es decir petabytes
+
+## AWS Database migration Service
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image29-MigrationDataBase.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image30-MigrationDataBase.png">
+</p>
+
+## Automatización en la implementación
+
+## CloudFormation
+- Permite modelar y aprovisionar todos los recursos de la infraestructura en la nube
+- Infraestructura como código
+- Crea un stack con los aprovisionamientos que contenga el cloudFormation
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image31-CloudFormation.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image32-CloudFormation.png">
+</p>
+
+## Elastic beanstalk 
+- Es una plataforma donde en pocos pasos, obtienes un balanceador de cargas y tantas instancias EC2 como uno indique 
+- Posee auto scaling (aumentando dependiendo de los criterios, mas CPU, mas memoria etc.) 
+- AWS Elastic Beanstalk provides a solution to quickly deploy and manage applications in the AWS Cloud 
+- You simply upload your application and Elastic Beanstalk automatically handles the deployment details of capacity provisioning load balancing auto-scalling and application health monitoring  
+- Amplia selección de plataformas para aplicaciones
+- Variedad de opciones de implementación de aplicaciones
+- Monitoreo
+- Estado de la aplicación
+- Administración y actualizaciones
+- Escalado
+- Personalización
+- Los ambientes soportados son:
+    - Docker image
+	- Go
+	- Java SE
+	- Java con tomcat
+	- .Net + windows server + IIS
+	- NodeJS
+	- PHP
+	- Python
+    - Ruby 
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image33-ElasticBeanstalk.png">
+</p>
+
+## Conectar y compartir datos
+
+## Direct Connect
+
+Conexión de red dedicada entre sus instalaciones y AWS
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image34-DirectConnect.png">
+</p>
+
+## Rote 53
+- Administrador de DNS (Sistema de nombres de dominio)
+- Crea nuevos dominios (pruebas, calidad, producción) 
+- Uno de los servicios mas interesantes de AWS 
+- Comprueba el estado de los servicios
+- AWS permite tener un DNS muy avanzado a tu disposición, con el podrás hacer subdominios asignados a instancias y verlos reflejados en segundos 
+- Route53 esta disponible en todas las regiones de AWS, por lo que funcionará excelente aun en caso de que algunas de las regiones se pierda 
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image35-Route53.png">
+</p>
+
+## EFS (Elastic File System)
+- Bajo costo
+- Elasticidad dinámica
+- Se puede modificar el objeto múltiples veces
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image36-EFS.png">
+</p>
+
+## Lambda y serverless 
+- Es un lugar donde puedes ejecutar funciones de tu código 
+- Se parece mucho al tema de microservicios (pequeñas unidades haciendo una tarea en especifico) 
+- Serverless - No existe un servidor como vimos en EC2, es decir solo esta el código en lambda y AWS se encarga de ejecutarlo cuando necesites 
+- Soporta varios lenguajes 
+- Memoria mínima de 128 MB, máxima 3000MB con incrementos de 64 MB 
+- Se puede correr tu aplicación hasta 300 segundos y tienes un tmp limitado a 512 
+- Esta limitada a 1000 ejecuciones concurrentes ONCURRENTES , no tiene limites de ejecuciones secuencias (una tras otra) 
+- Están corriendo varias lambas para los diferentes clientes de AWS, solo que son microambientes para cada uno  
+- No debemos preocuparnos por la seguridad en AWS ya que ellos se encargan de esa tara 
+- AWS monitorea constantemente la ejecución de tus funciones y se encarga de que siempre se tenga el mejor performance 
+- Aunque el código este compartido en la infraestructura, este corre en un ambiente virtual exclusivo, aislado de todas las demás ejecuciones de lambda 
+- Lambdas deben ser asíncronos 
+- Las instrucciones de lamba se guardan en el CloudWatch  
+- Administración totalmente automatizada
+- Tolerancia a errores
+- Pago solo por uso
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image37-Lambda.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image38-Lambda.png">
+</p>
+
+Lambda necesita permisos, se asignan a través de el rol de ejecución
+
+
+## SNS (Simple Notification Service)
+- Servicio de mensajería de publicación o suscripción completamente administrada para aplicaciones distribuidas o sin servidor
+- Entrega mensajes de manera fiable con durabilidad
+- Escala automáticamente su carga de trabajo
+- Simplifique su arquitectura
+- Mantenga la privacidad y seguridad de los mensajes
+- Servicio totalmente serverless
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image39-SNS.png">
+</p>
+
+## CloudFront
+
+- Es un servicio web de entrega de contenido. Se integra con otros servicios en la nube de AWS para brindar a los desarrolladores y empresas una manera fácil de distribuir contenido a los usuarios en todo el mundo con baja latencia, altas velocidades de transferencia de datos y sin compromisos mínimos de uso. Amazon CloudFront se puede utilizar para ofrecer todo su sitio web, incluido contenido dinámico, estático, de transmisión e interactivo, mediante una red global de ubicaciones de borde. Las solicitudes de contenido se enrutan automáticamente a la ubicación de borde más cercana, por lo que el contenido se entrega con el mejor rendimiento posible a los usuarios finales de todo el mundo.
+- Esta instalado en los edge
+- Por ejemplo si un cliente tiene su pagina en virgina, y se va para australia, cuando intente ingresar desde australia, el cloudFront por medio del Edge va hasta virginia por la información, luego la cachea para que al proximo ingreso pueda obtener respuesta desde el edge de virginia
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image40-CloudFront.png">
+</p>
+
+## ElastiCache
+- Almacén de datos en memoria completamente administrado y compatible con Memcached y Redis
+- Optimiza consultas hacia base de datos
+- Trabaja con la memoria RAM por eso es tan optimo a nivel de performance
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image41-ElastiCache.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image42-Security.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image43-Security.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image44-Security.png">
+</p>
+
+## Responsabilidad compartida
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image45-shared%20responsibility.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image46-shared%20responsibility.png">
+</p>
+
+## Autenticación y autorización
+
+## IAM  -  Identify and Access Management 
+- Controle de forma segura el acceso a los recursos de AWS
+- Manejar cuentas, y permitir acceso a ciertas maquinas o funcionalidades 
+- Permite gestionar usuarios y sus niveles de acceso a la consola AWS 
+- Permite un control centralizado de tu cuenta AWS 
+- Permite crear accesos a otros usuarios con tu propia cuenta de AWS 
+- Permite crear permisos específicos a cada usuario o grupo de usuarios 
+- Permite autenticarse mediante directorio activo  
+- Permite autenticarse con tu cuenta de facebook o linkedin 
+- Permite la autenticación multifactor (con clave enviada al móvil) 
+- Permite crear tu propia política de cambio de password (tipo y frecuencia) 
+- Soporta PCI DSS (estándar de seguridad de datos para pagos con tarjetas) 
+
+**Usuarios** - Son las diferentes personas que van a utilizar la consola de AWS 
+**Grupos** - Son una colección de usuarios, cada usuario del grupo hereda los permisos del grupo 
+**Políticas** - Las políticas se especifican en documentos, de tipo JSON, donde se otorgan permisos específicos sobre lo que se puede hacer un usuario, un grupo de usuarios o un rol 
+**Roles** - Se asigna a recursos AWS para permitir que utilicen otros recursos de AWS, ejemplo en donde se crea un rol para que tu servicio de maquina virtual pueda utilizar tu servicio de S3 de almacenamiento de ficheros 
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image47-IAM.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image48-IAM.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image49-IAM.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image50-IAM.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image51-IAM.png">
+</p>
+
+## Niveles de seguridad y normatividad
+
+## Amazon Inspector
+
+Analiza la seguridad de las aplicaciones
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image52-Inspector.png">
+</p>
+
+## AWS Shield
+- Servicio de protección contra DDoS
+- DDoS (Denegación de servicio)
+    - El objectivo es tumbar el servicio o dejar por fuera cierta aplicación 
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image53-Shield.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image54-Shield.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image55-Shield.png">
+</p>
+
+## Precios
+
+## EC2
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image56-EC2.png">
+</p>
+
+Tipos de instancias
+- Ondemand 
+    - Se arriendan por hora y son las mas caras, y son las que mas se usan no se sabe si es por desconocimiento 
+	    - Deberían ser para periodos cortos o cuando no hayan ofertas 
+- Reservadas 
+    - Son por años o cierto tiempo son mas baratas que las ondemand 
+    - Como mínimo por un año, también pueden ser por 1 año 
+- SPOT 
+    - Son las que están en oferta 
+- Host dedicados
+    - Servidor físico exclusivo
+    - Aplicaciones con requisitos de normatividad especificos
+
+## S3
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image57-S3.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image58-S3.png">
+</p>
+
+## EBS
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image59-EBS.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image60-without%20additional%20charge.png">
+</p>
+
+## AWS Cost Explorer
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image61-cost%20explorer.png">
+</p>
+
+## Trusted Advisor
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image62-trusted%20advisor.png">
+</p>
+
+## Arquitectura
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image63-Good%20Architecture%20framework.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image64-Good%20Architecture%20framework.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image65-Good%20Architecture%20framework.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image66-Good%20Architecture%20framework.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image67-Good%20Architecture%20framework.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image68-Good%20Architecture%20framework.png">
+</p>
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image69-Good%20Architecture%20framework.png">
+</p>
+
+## Arquitectura de referencia 
+
+<p align="center">
+<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image70-reference%20architectures.png">
+</p>
+
+
 
 
 
