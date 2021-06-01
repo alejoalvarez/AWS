@@ -6,9 +6,30 @@
 <img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/image1-Cloud%20computing%20models.png">
 </p>
 
+**SAAS (Software as a Service)**
+
+El SASS (Software as a Service) o Software Como Servicio es aquel en donde la infraestructura, sistema operativo y software es proporcionado por un tercero. Un ejemplo de esto es el servicio de correo electrónico con servicios como Gmail, Outlook entre otros. Otro ejemplo es Dropbox que provee software como un servicio. Este tipo de modelo de software es muy común hoy en día.
+
+**IASS (Infraestructure as a service)**
+
+El IASS (Infraestructure as a Service) o Infraestructura como servicio esta constituido por el hardware requerido para ejecutar nuestra aplicación, es decir por ejemplo todos los recursos que se requieren para que un servicio como Gmail se ejecute, constituyen los elementos de la nube necesarios para que se pueda utilizar dicha aplicación. Cuando todos estos componentes son provistos por un tercero como computo, redes y almacenamiento, podemos hacer uso de estos para que en conjunto formen la infraestructura requerida para montar soluciones en la nube. Cuando utilizamos infraestructura como servicio básicamente estamos rentando esta infraestructura a un tercero. Para ello por lo general utilizamos un hypervisor que nos permite crear hardware requerido de forma virtual, y esto se hace utilizando a su vez un software. Para poder lograr esto el hypervisor crear maquinas virtuales. Una ventaja de utilizar estas maquinas virtuales es que podemos migrar dichas máquinas de un punto a otro. Al proveer acceso a dichas maquinas virtuales, podemos instalar nuestro propio sistema operativo y aplicaciones, esto es conocido como Plataforma como Servicio, y sobre esta plataforma es donde nuestro Software como Servicio vive.
+
 <p align="center">
 <img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image2-Cloud%20computing%20models.png">
 </p>
+
+**La nube privada**
+
+Es donde controlas todo, se tiene su propio data center y dentro de este se encuentran sus dispositivos de almacenamiento. Las ventajas es que se puede controlar de forma total los componentes de forma directa. La desventajas son que se requiere una gran inversión en equipo, y la vida útil de este hardware es de un promedio de 3 años ademas del costo de salarios de empleados, electricidad, conectividad a Internet, etc.
+
+**La nube híbrida**
+
+En este modelo se combina una parte de la nube para algunos de los servicios como backup y recuperación de datos. Es decir que si no deseamos comprar discos duros todo el tiempo, podemos hacer uso de la nube para hacer copias de la información en caso de desastres. Para poder implementar este modelo es requerido cierto grado de conectividad entre su datacenter y el de la nube.
+
+**La nube pública**
+
+Brinda mucha flexibilidad, pero se requiere utilizar la infraestructura provista y pagar por lo que se va utilizando. La ventaja es que una ves que se dejan de utilizar estos servicios también se deja de pagar por su costo. Es infinitamente escalable y elástica, es decir que puede creer y reducirse en tamaño, y por lo general se cubren solo los costos de los recursos que se están utilizando. Es importante tomar en cuenta que tipo de proveedor se esta utilizando, ya que se desea que se pueda provisionar una red de forma rápida, que se ajuste al cambio continuo
+
 
 ## Zonas de disponibilidad
 	
