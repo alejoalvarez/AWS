@@ -3,7 +3,7 @@
 ## Modelos de informática en la nube 
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/image1-Cloud%20computing%20models.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120524619-dd4c1f00-c39c-11eb-80ee-3fa7e1f3ff69.png">
 </p>
 
 **SAAS (Software as a Service)**
@@ -15,7 +15,7 @@ El SASS (Software as a Service) o Software Como Servicio es aquel en donde la in
 El IASS (Infraestructure as a Service) o Infraestructura como servicio esta constituido por el hardware requerido para ejecutar nuestra aplicación, es decir por ejemplo todos los recursos que se requieren para que un servicio como Gmail se ejecute, constituyen los elementos de la nube necesarios para que se pueda utilizar dicha aplicación. Cuando todos estos componentes son provistos por un tercero como computo, redes y almacenamiento, podemos hacer uso de estos para que en conjunto formen la infraestructura requerida para montar soluciones en la nube. Cuando utilizamos infraestructura como servicio básicamente estamos rentando esta infraestructura a un tercero. Para ello por lo general utilizamos un hypervisor que nos permite crear hardware requerido de forma virtual, y esto se hace utilizando a su vez un software. Para poder lograr esto el hypervisor crear maquinas virtuales. Una ventaja de utilizar estas maquinas virtuales es que podemos migrar dichas máquinas de un punto a otro. Al proveer acceso a dichas maquinas virtuales, podemos instalar nuestro propio sistema operativo y aplicaciones, esto es conocido como Plataforma como Servicio, y sobre esta plataforma es donde nuestro Software como Servicio vive.
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image2-Cloud%20computing%20models.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120524692-f359df80-c39c-11eb-8411-fbcdd40cd37e.png">
 </p>
 
 **La nube privada**
@@ -39,7 +39,7 @@ Brinda mucha flexibilidad, pero se requiere utilizar la infraestructura provista
 - También hay egges o bordes que se comunican con las regiones para formar el backbone de AWS 
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image3-Availability%20zone.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120524768-079ddc80-c39d-11eb-8274-e9f7c165d33d.png">
 </p>
 
 Para elegir región se usan 4 criterios: 
@@ -50,20 +50,20 @@ Para elegir región se usan 4 criterios:
 - Precio de los servicios 
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image4-selection%20Region.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120524815-15536200-c39d-11eb-8af3-525a413946f3.png">
 </p>
 
 - mas de 205 edge
 - Todos los edge tienen DNS 
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image5-Edge%20Locations.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120524867-24d2ab00-c39d-11eb-8d79-16ea4c2748ce.png">
 </p>
 
 Formas de interactuar con AWS (Todo en AWS es una API)
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image6-Interact%20with%20AWS.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120524929-33b95d80-c39d-11eb-9862-efdfcce8abaf.png">
 </p>
 
 ## EC2  - Elastic Compute Cloud
@@ -104,11 +104,11 @@ Formas de interactuar con AWS (Todo en AWS es una API)
 ### Clasificación de instancias
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image7-usecase.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120524993-43d13d00-c39d-11eb-880f-bb60f3c96cdc.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image8-usecase.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120525049-521f5900-c39d-11eb-90b2-4f16d10caa15.png">
 </p>
 
 ## Almacenamiento de datos
@@ -162,22 +162,21 @@ Condiciones para usar EBS:
 - Los objetos se pueden convertir en privados o públicos, y los derechos de cabina se pueden otorgar a usuarios específicos.
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image9-S3.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120525156-711deb00-c39d-11eb-8ffe-b8edb19baa8b.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image10-S3.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120525212-7f6c0700-c39d-11eb-8d96-ad3f9b620cdb.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image11-S3.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120525268-901c7d00-c39d-11eb-9a24-bfc25dbed7be.png">
 </p>
-
 
 ## S3 Glacier
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image12-S3%20Glacier.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120525311-9ca0d580-c39d-11eb-944f-b4414d3dbc24.png">
 </p>
 
 - AWS tiene un tipo de almacenamiento mas económico, pero mas lento llamado Glacier 
@@ -188,11 +187,11 @@ Condiciones para usar EBS:
 - Su tamaño es de 40 Teras
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image13-S3%20Glacier.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120525364-ad514b80-c39d-11eb-954e-f6e54d01613c.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image14-S3%20Storage%20Classes.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120525407-b93d0d80-c39d-11eb-8665-e7b57328c0c8.png">
 </p>
 
 ## Proteccón de datos
@@ -200,7 +199,7 @@ Condiciones para usar EBS:
 ## VPC
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image15-VPC.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120525468-c659fc80-c39d-11eb-85d5-8d85eb1b73ba.png">
 </p>
 
 - El firewall que protege la instancia EC2 es comúnmente llamada Security Group
@@ -227,14 +226,14 @@ Condiciones para usar EBS:
 - IP publica estática para que internet vea la subnet publica
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image16-Security%20Group.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120525543-d540af00-c39d-11eb-85c9-0e1347b32ba8.png">
 </p>
 
 - El security group puede ser asociada a una o a muchas instancias
 - Solo reglas "permitir", sin reglas de "denegar" (por ejemplo desde que ip, desde que rango de ips)
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image17-Security%20Group.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120525582-e2f63480-c39d-11eb-8029-04db8f93dbde.png">
 </p>
 
 ## Monitoreo
@@ -246,11 +245,11 @@ Condiciones para usar EBS:
 - El Elastic Load Balancer (ELB) tiene cloud watch 
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image18-Cloud%20Watch.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120525631-f3a6aa80-c39d-11eb-85af-ba2b6fe5d5de.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image19-Cloud%20Watch.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120525678-04efb700-c39e-11eb-987b-bcf99a1cbb83.png">
 </p>
 
 Beneficios de cloud watch:
@@ -270,7 +269,7 @@ Beneficios de cloud watch:
 - Pago solo por lo que se utilice
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image20-EC2.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120525744-15079680-c39e-11eb-8be3-a89140478bf9.png">
 </p>
 
 ## ELB (elastic Load Balancing)
@@ -283,11 +282,11 @@ Beneficios de cloud watch:
 - El balanceador constantemente pregunta por el estado de salud de las N instancias que se tengan desplegadas.
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image21-ELB.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120525913-46806200-c39e-11eb-8766-b9fd4a603f1a.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image22-ELB.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120525976-54ce7e00-c39e-11eb-8715-62255af58737.png">
 </p>
 
 <p align="center">
