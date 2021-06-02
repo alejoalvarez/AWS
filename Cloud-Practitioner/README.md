@@ -290,35 +290,34 @@ Beneficios de cloud watch:
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image23-ELB.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120530337-040d5400-c3a3-11eb-94a6-bd26acf04247.png">
 </p>
 
 ## Servicio de base de datos
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image24-Database.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120530433-21422280-c3a3-11eb-85b2-e892c6439fd1.png">
 </p>
 
 ## RDS - Amazon Relational Database Service
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image25-Aurora.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120530488-30c16b80-c3a3-11eb-9c83-4e653f20d6c9.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image25-RDS.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120530572-4a62b300-c3a3-11eb-8062-5c22a339efc7.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image26-RDS.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120530603-59e1fc00-c3a3-11eb-8076-930cc71d0054.png">
 </p>
 
 ## DynamoDB
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image27-DynamoDB.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120530907-a0375b00-c3a3-11eb-8e78-8dbdf19889c3.png">
 </p>
-
 
 Las tablas pueden ser a nivel regional o a nivel global
 
@@ -331,7 +330,7 @@ Cuando usar DynamoDB:
 - IoT
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image28-DataBase.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120530995-ba713900-c3a3-11eb-9d52-d1ba37d9f62d.png">
 </p>
 
 Redshift permite almacenar millones de gigas es decir petabytes
@@ -339,11 +338,11 @@ Redshift permite almacenar millones de gigas es decir petabytes
 ## AWS Database migration Service
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image29-MigrationDataBase.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120531047-cd840900-c3a3-11eb-9ad6-47359df0763d.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image30-MigrationDataBase.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120531079-daa0f800-c3a3-11eb-9c02-e73bb7255c88.png">
 </p>
 
 ## Automatización en la implementación
@@ -354,11 +353,11 @@ Redshift permite almacenar millones de gigas es decir petabytes
 - Crea un stack con los aprovisionamientos que contenga el cloudFormation
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image31-CloudFormation.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120531131-ea204100-c3a3-11eb-8edc-9f99258bffa5.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image32-CloudFormation.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120531183-f6a49980-c3a3-11eb-94d7-e867f1a08eb9.png">
 </p>
 
 ## Elastic beanstalk 
@@ -385,7 +384,7 @@ Redshift permite almacenar millones de gigas es decir petabytes
     - Ruby 
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image33-ElasticBeanstalk.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120531235-091ed300-c3a4-11eb-9e4b-706848984bba.png">
 </p>
 
 ## Conectar y compartir datos
@@ -395,7 +394,7 @@ Redshift permite almacenar millones de gigas es decir petabytes
 Conexión de red dedicada entre sus instalaciones y AWS
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image34-DirectConnect.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120531328-1e93fd00-c3a4-11eb-92b7-9ec974370268.png">
 </p>
 
 ## Rote 53
@@ -407,7 +406,7 @@ Conexión de red dedicada entre sus instalaciones y AWS
 - Route53 esta disponible en todas las regiones de AWS, por lo que funcionará excelente aun en caso de que algunas de las regiones se pierda 
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image35-Route53.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120531393-32d7fa00-c3a4-11eb-9b69-889707f728fc.png">
 </p>
 
 ## EFS (Elastic File System)
@@ -416,7 +415,7 @@ Conexión de red dedicada entre sus instalaciones y AWS
 - Se puede modificar el objeto múltiples veces
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image36-EFS.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120531470-497e5100-c3a4-11eb-9ce2-8af32fc660e5.png">
 </p>
 
 ## Lambda y serverless 
@@ -438,15 +437,14 @@ Conexión de red dedicada entre sus instalaciones y AWS
 - Pago solo por uso
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image37-Lambda.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120531617-73d00e80-c3a4-11eb-8bd9-d80893e95664.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image38-Lambda.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120531686-84808480-c3a4-11eb-9bc3-4eaff6296014.png">
 </p>
 
 Lambda necesita permisos, se asignan a través de el rol de ejecución
-
 
 ## SNS (Simple Notification Service)
 - Servicio de mensajería de publicación o suscripción completamente administrada para aplicaciones distribuidas o sin servidor
@@ -457,7 +455,7 @@ Lambda necesita permisos, se asignan a través de el rol de ejecución
 - Servicio totalmente serverless
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image39-SNS.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120531791-a11cbc80-c3a4-11eb-9e28-12739299e639.png">
 </p>
 
 ## CloudFront
@@ -467,7 +465,7 @@ Lambda necesita permisos, se asignan a través de el rol de ejecución
 - Por ejemplo si un cliente tiene su pagina en virgina, y se va para australia, cuando intente ingresar desde australia, el cloudFront por medio del Edge va hasta virginia por la información, luego la cachea para que al proximo ingreso pueda obtener respuesta desde el edge de virginia
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image40-CloudFront.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120531857-b1349c00-c3a4-11eb-9feb-69130e11563e.png">
 </p>
 
 ## ElastiCache
@@ -476,29 +474,29 @@ Lambda necesita permisos, se asignan a través de el rol de ejecución
 - Trabaja con la memoria RAM por eso es tan optimo a nivel de performance
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image41-ElastiCache.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120531920-c3aed580-c3a4-11eb-8bb6-0cb5ee08f4df.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image42-Security.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120531976-d32e1e80-c3a4-11eb-8082-dfc9fffe3858.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image43-Security.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120532046-e640ee80-c3a4-11eb-8491-83a0a946ffac.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image44-Security.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120532113-f658ce00-c3a4-11eb-8bfd-a0cfd4acc5da.png">
 </p>
 
 ## Responsabilidad compartida
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image45-shared%20responsibility.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120532176-05d81700-c3a5-11eb-8e8c-219b91847fb9.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image46-shared%20responsibility.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120532268-22744f00-c3a5-11eb-88e5-f085dfa0922c.png">
 </p>
 
 ## Autenticación y autorización
@@ -522,23 +520,23 @@ Lambda necesita permisos, se asignan a través de el rol de ejecución
 **Roles** - Se asigna a recursos AWS para permitir que utilicen otros recursos de AWS, ejemplo en donde se crea un rol para que tu servicio de maquina virtual pueda utilizar tu servicio de S3 de almacenamiento de ficheros 
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image47-IAM.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120532321-31f39800-c3a5-11eb-922e-43abcb8cff20.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image48-IAM.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120532389-3fa91d80-c3a5-11eb-8aab-3afd7ae599b8.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image49-IAM.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120532480-53ed1a80-c3a5-11eb-8ef4-0bed10841bcb.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image50-IAM.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120532551-60717300-c3a5-11eb-9bda-b83c5d538a3e.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image51-IAM.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120532589-6cf5cb80-c3a5-11eb-8a9f-adc03fbc2d07.png">
 </p>
 
 ## Niveles de seguridad y normatividad
@@ -548,7 +546,7 @@ Lambda necesita permisos, se asignan a través de el rol de ejecución
 Analiza la seguridad de las aplicaciones
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image52-Inspector.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120532634-7d0dab00-c3a5-11eb-9380-e1012fc839a1.png">
 </p>
 
 ## AWS Shield
@@ -557,15 +555,15 @@ Analiza la seguridad de las aplicaciones
     - El objectivo es tumbar el servicio o dejar por fuera cierta aplicación 
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image53-Shield.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120532687-8bf45d80-c3a5-11eb-8a0c-6089cda1c89c.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image54-Shield.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120532726-99a9e300-c3a5-11eb-810a-64f38e90f154.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image55-Shield.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120532829-b9d9a200-c3a5-11eb-917b-141cdd1374df.png">
 </p>
 
 ## Precios
@@ -573,7 +571,7 @@ Analiza la seguridad de las aplicaciones
 ## EC2
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image56-EC2.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120532891-ca8a1800-c3a5-11eb-95bd-610e8c36c423.png">
 </p>
 
 Tipos de instancias
@@ -592,72 +590,68 @@ Tipos de instancias
 ## S3
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image57-S3.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120532952-d83f9d80-c3a5-11eb-8ed8-f9011d8908de.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image58-S3.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120532998-e4c3f600-c3a5-11eb-824f-cbb83feb6494.png">
 </p>
 
 ## EBS
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image59-EBS.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120533086-fc9b7a00-c3a5-11eb-8237-5814691d7a81.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image60-without%20additional%20charge.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120533154-0f15b380-c3a6-11eb-9d86-4f5ea135767e.png">
 </p>
 
 ## AWS Cost Explorer
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image61-cost%20explorer.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120533216-1e94fc80-c3a6-11eb-89ec-81f3b4dbcf5d.png">
 </p>
 
 ## Trusted Advisor
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image62-trusted%20advisor.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120533279-2eacdc00-c3a6-11eb-995e-43e6394787db.png">
 </p>
 
 ## Arquitectura
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image63-Good%20Architecture%20framework.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120533325-3d938e80-c3a6-11eb-96b3-b526b1d4e475.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image64-Good%20Architecture%20framework.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120533419-54d27c00-c3a6-11eb-985e-b587107375cb.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image65-Good%20Architecture%20framework.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120533497-63209800-c3a6-11eb-8080-f1ae216c8372.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image66-Good%20Architecture%20framework.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120533555-76336800-c3a6-11eb-964b-326e6e88de92.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image67-Good%20Architecture%20framework.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120533606-85b2b100-c3a6-11eb-9717-991bb48c618b.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image68-Good%20Architecture%20framework.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120533663-982cea80-c3a6-11eb-8f17-91cc7ad8c336.png">
 </p>
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image69-Good%20Architecture%20framework.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120533709-a549d980-c3a6-11eb-9564-745e9f306aa7.png">
 </p>
 
 ## Arquitectura de referencia 
 
 <p align="center">
-<img height="450" src="https://github.com/alejoalvarez/Images/blob/trunk/aws/cloud-practitioner/Image70-reference%20architectures.png">
+<img height="450" src="https://user-images.githubusercontent.com/13514156/120533764-b5fa4f80-c3a6-11eb-93a3-fe7bafb6a9e5.png">
 </p>
-
-
-
-
 
